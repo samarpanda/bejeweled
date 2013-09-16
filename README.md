@@ -13,4 +13,4 @@
 
 1. Activate user play mode.
 1. Extensive testing.
-1. Review and Optimized
+1. Review and Optimize.
