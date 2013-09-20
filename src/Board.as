@@ -123,6 +123,9 @@ package
 				}
 				count++;
 			}
+			Helper.addDelay(function() {
+				dispatchEvent(new Event(Board.ACTIVATE_MATCH_FIND));
+			});
 		}
 		
 		/**
@@ -133,17 +136,16 @@ package
 			var startTime:int = getTimer();
 			var count = 0;
 			var isRemoved:Boolean = true;
-			while (isRemoved) {
-				isRemoved = removeMatchedCards();
-				if (isRemoved)
-					this.dispatchEvent(new Event(Board.FILL_BLANK_BOXES));
-				else
-					break;
-				count++;
+			isRemoved = removeMatchedCards();
+			if (isRemoved) {
+				Helper.addDelay(function() {
+					dispatchEvent(new Event(Board.FILL_BLANK_BOXES));
+				});
 			}
 			if(Main.IS_DEBUG)
-				trace("Count >> ", count," >> ", getTimer() - startTime);
-			parent.dispatchEvent(new Event(Main.GAME_RESUME));
+				trace("Count >> ", count, " >> ", getTimer() - startTime);
+			if(!isRemoved)
+				parent.dispatchEvent(new Event(Main.GAME_RESUME));
 		}
 		
 		private function removeMatchedCards():Boolean {
