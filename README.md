@@ -13,7 +13,7 @@
 
 ## Preview
 
-1. [Demo](http://samarpanda.com/jewel01/)
+1. [Live preview](http://samarpanda.com/jewel01/)
 
 
 ## Todo
