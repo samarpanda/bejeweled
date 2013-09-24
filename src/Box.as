@@ -106,12 +106,13 @@ package
 				var id;
 				/**
 				 * Random cards
-				 id = getRandomCardId();
-				*/
+				 */
+				id = getRandomCardId();
+				
 				/**
 				 * Player friendly random cards.
 				 */
-				id = getInitialRandomCardId(MIN_SAME_CARDS);
+				//id = getInitialRandomCardId(MIN_SAME_CARDS);
 				_card.dispatchEvent(new CardEvent(id, CardEvent.CARD_CHANGE));
 			}
 		}
