@@ -2,7 +2,7 @@
 
 1. Game is only activated for autoplay mode.
 
-## How to check?
+## Quick game intro
 
 1. Autoplay starts on clicking on start button.
 1. To stop autoplay please click on stop button.
