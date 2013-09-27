@@ -19,5 +19,5 @@
 ## Todo
 
 1. Extensive testing.
-1. Review and Optimize.
+1. Review and Optimize. Try profiling tool like [Adobe Scout](http://www.youtube.com/watch?v=NybbHVxfLLI)
 1. Add a video clip to show the game.
